@@ -94,18 +94,20 @@ p::first-letter {
   padding: 6px 12px;
   display: inline-flex;
   align-items: center;
-  color: var(--color-grey);
+  color: var(--color-black);
   font: 400 14px/16px var(--font-secondary);
   text-transform: uppercase;
   text-decoration: none;
-  border: 1px solid var(--color-grey);
+  border: 1px solid var(--color-black);
   border-radius: 40px;
+  opacity: 0.8;
   transition: all 0.3s var(--ease-out-quad);
   outline: none;
 }
 
 .link:hover,
 .link:focus {
+  opacity: 1;
   transform: translateY(-2px);
   border-color: var(--color-black);
 }
@@ -168,6 +170,10 @@ p::first-letter {
 .title {
   margin-top: var(--spacing-2);
   margin-bottom: var(--spacing-8);
+}
+
+#grants {
+  margin-top: var(--spacing-4);
 }
 
 @media (max-width: 576px) {
