@@ -2,7 +2,7 @@ account_id = "44484193795fa8650ad26dd3dcd55a9a"
 name = "savai-shakti"
 site = {bucket = "./src"}
 type = "webpack"
-workers_dot_dev = true
+workers_dev = true
 
 # [env.production]
 # route = ""
