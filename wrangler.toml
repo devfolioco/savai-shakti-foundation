@@ -1,5 +1,6 @@
 account_id = "44484193795fa8650ad26dd3dcd55a9a"
 name = "savai-shakti"
+site = {bucket = "./src"}
 type = "webpack"
 workers_dot_dev = true
 
@@ -7,10 +8,6 @@ workers_dot_dev = true
 # route = ""
 # zone_id = ""
 # workers_dot_dev = false
-
-[site]
-bucket = "./src"
-entry-point = "workers"
 
 # References:
 # https://github.com/signalnerve/i18n-example-workers/blob/master/wrangler.toml
