@@ -9,7 +9,6 @@ entry-point = "workers-site"
 [env.production]
 route = "savai-shakti-foundation.pages.dev/*"
 workers_dot_dev = false
-zone_id = ""
 
 # References:
 # https://github.com/signalnerve/i18n-example-workers/blob/master/wrangler.toml
