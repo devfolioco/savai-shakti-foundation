@@ -59,6 +59,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  color: gray;
+}
+
 h1 {
   font: 400 28px/36px var(--font-secondary);
 }
