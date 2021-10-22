@@ -1,0 +1,17 @@
+name = "savai-shakti-foundation"
+type = "webpack"
+workers_dev = true
+
+[site]
+bucket = "./src"
+entry-point = "workers-site"
+
+[env.production]
+account_id = "57d45ef71c5fa2dafd245cd551b60ded"
+zone_id = "a49c41cede05b5ff03146f5cdba27c88"
+route = "savaishakti.foundation/*"
+workers_dev = false
+
+# References:
+# https://github.com/signalnerve/i18n-example-workers/blob/master/wrangler.toml
+# https://developers.cloudflare.com/workers/cli-wrangler
