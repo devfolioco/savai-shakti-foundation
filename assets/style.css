@@ -6,6 +6,14 @@
 }
 
 @font-face {
+  font-family: "iA Writer Mono S";
+  src: url(../fonts/iAWriterMonoS-Italic.woff2) format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "iA Writer Quattro S";
   src: url(../fonts/iAWriterQuattroS-Regular.woff2) format("woff2");
   font-weight: 400;
@@ -60,7 +68,7 @@ body {
 }
 
 a {
-  color: gray;
+  color: var(--color-grey);
 }
 
 h1 {
@@ -78,7 +86,7 @@ p {
 }
 
 p::first-letter {
-  margin-left: var(--spacing-7);
+  margin-left: var(--spacing-5);
 }
 
 .page {
@@ -149,7 +157,7 @@ p::first-letter {
 .section-card__content {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-2);
+  gap: var(--spacing-3);
 }
 
 .section-card__content--offset {
@@ -189,7 +197,7 @@ p::first-letter {
   }
 
   p::first-letter {
-    margin-left: var(--spacing-5);
+    margin-left: var(--spacing-0);
   }
 
   .section-card {
