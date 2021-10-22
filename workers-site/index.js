@@ -35,8 +35,10 @@ class ElementHandler {
 
   element(element) {
     const i18nKey = element.getAttribute("data-i18n-key");
+
     if (i18nKey) {
       const translation = this.countryStrings[i18nKey];
+
       if (translation) {
         element.setInnerContent(translation);
       }
@@ -46,8 +48,10 @@ class ElementHandler {
 
 async function handleEvent(event) {
   const url = new URL(event.request.url);
+
   try {
     let options = {};
+
     if (DEBUG) {
       options = {
         cacheControl: {
@@ -55,10 +59,11 @@ async function handleEvent(event) {
         },
       };
     }
-    const languageHeader = event.request.headers.get("Accept-Language");
-    const language = parser.pick(["hi"], languageHeader);
-    const countryStrings = strings[language] || {};
 
+    const languageHeader = event.request.headers.get("Accept-Language");
+    const language = parser.pick(["en", "hi"], languageHeader);
+
+    const countryStrings = strings[language] || {};
     const response = await getAssetFromKV(event, options);
 
     return new HTMLRewriter()
