@@ -1,0 +1,16 @@
+account_id = ""
+name = "savai-shakti"
+type = "webpack"
+workers_dot_dev = true
+
+# [env.production]
+# route = ""
+# zone_id = ""
+# workers_dot_dev = false
+
+[site]
+bucket = "./src"
+entry-point = "workers"
+
+# References:
+# https://github.com/signalnerve/i18n-example-workers/blob/master/wrangler.toml

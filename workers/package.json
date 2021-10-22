@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "savai-shakti-workers",
+  "version": "0.1.0",
+  "description": "savaishakti.foundation Workers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhishek Warokar <abhishek@devfolio.co>",
+  "license": "MIT",
+  "dependencies": {
+    "@cloudflare/kv-asset-handler": "0.1.3",
+    "accept-language-parser": "1.5.0"
+  }
+}

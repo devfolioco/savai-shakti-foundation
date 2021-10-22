@@ -1,4 +1,12 @@
-.vercel
-
-# Misc
+.cargo-ok
 .DS_Store
+.vercel
+**/*.rs.bk
+/target
+bin/
+Cargo.lock
+dist
+node_modules/
+pkg/
+wasm-pack.log
+worker/
