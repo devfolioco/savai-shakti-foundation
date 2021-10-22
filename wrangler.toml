@@ -1,4 +1,4 @@
-name = "savai-shakti"
+name = "savai-shakti-foundation"
 type = "webpack"
 workers_dev = true
 
@@ -6,10 +6,11 @@ workers_dev = true
 bucket = "./src"
 entry-point = "workers-site"
 
-# [env.production]
-# route = ""
-# zone_id = ""
-# workers_dot_dev = false
+[env.production]
+route = "savai-shakti-foundation.pages.dev/*"
+workers_dot_dev = false
+zone_id = ""
 
 # References:
 # https://github.com/signalnerve/i18n-example-workers/blob/master/wrangler.toml
+# https://developers.cloudflare.com/workers/cli-wrangler
