@@ -1,8 +1,11 @@
 account_id = "44484193795fa8650ad26dd3dcd55a9a"
 name = "savai-shakti"
-site = {bucket = "./src"}
 type = "webpack"
 workers_dev = true
+
+[site]
+bucket = "./src"
+entry-point = "workers-site"
 
 # [env.production]
 # route = ""
