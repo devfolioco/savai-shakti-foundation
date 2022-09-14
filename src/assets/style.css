@@ -179,6 +179,8 @@ p::first-letter {
 .avatar__image {
   width: 100%;
   height: auto;
+  max-height: 100%;
+  margin-top: var(--spacing-2);
 }
 
 .title {
