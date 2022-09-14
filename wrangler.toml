@@ -9,7 +9,7 @@ entry-point = "workers-site"
 [env.production]
 account_id = "57d45ef71c5fa2dafd245cd551b60ded"
 zone_id = "a49c41cede05b5ff03146f5cdba27c88"
-route = "savaishakti.foundation/*"
+route = "thebuilders.foundation/*"
 workers_dev = false
 
 # References:
